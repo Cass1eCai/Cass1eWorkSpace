@@ -1,2 +1,2 @@
 # Cass1eWorkSpace
-前锋学习考试
+学习考试
