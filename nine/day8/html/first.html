@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        height:100%;
+    }
+    .top{
+        height:50px;
+        background-color: aquamarine;
+    }
+    .bottom{
+        height:calc(100% - 50px);
+        background-color: blueviolet;
+    }
+    .left{
+        width:300px;
+        height:100%;
+        background-color: darkseagreen;
+        float:left;
+    }
+    .right{
+        width:calc(100% - 300px);
+        height:100%;
+        background-color: chartreuse;
+        float:left;
+    }
+</style>
+<body>
+    <div class="top"></div>
+    <div class="bottom">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

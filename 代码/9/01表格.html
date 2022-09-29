@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        /* width: 400px;
+        height: 500px;
+        border: 1px solid red;
+        background-color: pink; */
+        border-collapse: collapse;
+      
+    }
+    td{
+        /* border: 1px solid;
+        width: 100px;
+        height: 100px; */
+        /* border: 1px solid green; */
+        text-align: center;
+        vertical-align: top;
+    }
+</style>
+<body>
+    <!-- 
+        表单的作用：
+            收集用户数据
+        表格的作用：
+            展示数据
+        语法：
+            <table></table>
+            表格默认没有边框
+            默认单元格是分离状态
+     -->
+     <table width="400px" height="500px" border="2" >
+
+            <!-- 
+
+                table标签属性：
+                    width=""    	规定表格的宽度
+                    height="" 		规定表格的高度
+                    border=""   	规定表格的边框宽度
+                    bordercolor="" 	规定表格的边框颜色
+                    bgcolor="" 		规定表格的背景颜色
+                    cellspacing="" 	规定单元格之间的空白
+                    cellpadding="" 	规定单元边沿与其内容之间的空白
+                    rules="rows/cols"
+             -->
+
+        <!-- 
+            规定单元格内容水平方向的对齐方式
+            align:
+                left
+                center
+                right
+            添加给tr时。整行都有相同的对齐方式
+            添加给td时。当前单元格拥有独立的对齐方式
+
+
+
+            规定单元格内容垂直方向的对齐方式
+            valign:
+                top
+                middle
+                bottom
+            添加给tr时。整行都有相同的对齐方式
+            添加给td时。当前单元格拥有独立的对齐方式
+
+
+         -->
+        <tr align="right" valign="bottom">
+            <td>1111</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td align="right">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td valign="top">4</td>
+        </tr>
+     </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width:200px;
+        height:30px;
+        border:solid;
+        line-height:30px;
+        text-align:center;
+        font-family:"楷体"
+    }
+    .one{
+        width:400px;
+        height:400px;
+        border:solid;
+    }
+    .box:hover{
+        background-color:blue;
+        color:red;
+    }
+    .one1{
+        font-weight:700px;
+        font-style:italic;
+    }
+    .one:hover .box{
+        border:dashed;
+    }
+</style>
+<body>
+    <ul class="one">
+        <li class="box">这是第1条<span class="one1">数据</span></li>
+        <li class="box">这是第2条<span class="one1">数据</span></li>
+        <li class="box">这是第3条<span class="one1">数据</span></li>
+        <li class="box">这是第4条<span class="one1">数据</span></li>
+        <li class="box">这是第5条<span class="one1">数据</span></li>
+    </ul>
+</body>
+</html>

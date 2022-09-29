@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        width: 100px;
+        height: 40px;
+        border: 1px solid;
+        float: left;
+        margin: 6px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .three{
+        background-color: red;
+    }
+    /* 结构伪类
+
+    先找元素，再找位置，
+    :nth-of-type(number){
+
+    }
+    限定元素类型
+    */
+
+    /* 找父元素box里面的第四个li标签 */
+    .box li:nth-of-type(4){
+        background-color: green;
+    }
+    .box li:nth-of-type(5){
+        background-color: pink;
+    }
+    .box li:nth-of-type(6){
+        background-color: orange;
+    }
+    .box li:nth-of-type(6){
+        background-color: aqua;
+    }
+    .box li:nth-last-of-type(1){
+        background-color: red;
+    }
+    .box li:nth-of-type(odd){
+       border: 6px solid black;
+    }
+    .box li:nth-of-type(2n){
+       border: 6px solid purple;
+    }
+
+    .box li:first-of-type{
+        background-color: black;
+    }
+    .box li:last-of-type{
+        background-color: violet;
+    }
+</style>
+<body>
+    <ul class="box">
+        <p>这是第一个p标签</p>
+        <li>首页</li>
+        <li>走进千锋</li>
+        <p>这是第二个p标签</p>
+        <p>这是第三个p标签</p>
+        <li class="three">人才服务</li>
+        <li>4好程序员</li>
+        <span>123</span>
+        <li>5千锋教育</li>
+        <h1>1111</h1>
+        <li>6扣丁学堂</li>
+        <li>app外包</li>
+        <li>培训服务</li>
+        <li>创业孵化</li>
+        <span></span>
+        <p></p>
+    </ul>
+    
+</body>
+</html>

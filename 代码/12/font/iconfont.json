@@ -1,0 +1,37 @@
+{
+  "id": "3661538",
+  "name": "2209",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8288837",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e848",
+      "unicode_decimal": 59464
+    },
+    {
+      "icon_id": "2674476",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "376345",
+      "name": "个人中心",
+      "font_class": "user",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}

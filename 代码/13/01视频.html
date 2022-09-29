@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    video{
+        width: 400px;
+    }
+</style>
+<body>
+    <!-- 视频 -->
+    <video src="./3theA.mp4" controls loop  muted poster="../图片合集/16.jpg">
+        您的浏览器不支持视频标签，请切换高版本浏览器！
+    </video>
+    <!-- 
+        src:引入资源地址
+        controls：播放控件
+        loop:循环播放
+        muted:静音
+        autoplay:自动播放
+        poster:视频第一帧图片
+     -->
+     <!-- 视频格式兼容：mp4 ogg webm -->
+     <video>
+        <source src="./3theA.mp4" type="video/mp4">
+        <source src="./3theA.ogg" type="video/ogg">
+        <source src="./3theA.webm" type="video/webm">
+        <!-- 
+            source:作为浏览器兼容视频格式使用，
+         -->
+     </video>
+</body>
+</html>

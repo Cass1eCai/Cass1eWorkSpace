@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        /* 去除默认样式 */
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid;
+        border-radius: 50%;
+        /* vertical-align: middle; */
+        margin-top: -5px;
+    }
+    input:checked{
+        background-image: url(../图片合集/16.jpg);
+        background-size: cover;
+    }
+    span{
+        display: inline-block;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    性别： 
+    <input type="radio" name="sex" id=""><span>男</span>
+    <input type="radio" name="sex" id=""><span>女</span>
+</body>
+</html>

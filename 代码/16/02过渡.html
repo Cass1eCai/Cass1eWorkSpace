@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* 设置过渡css名称 */
+        /* transition-property: width; */
+        /* 
+        默认值 all
+        */
+        /* 设置过渡时间 */
+        /* transition-duration: 2s; */
+        /* 
+        定义时间曲线
+        */
+        /* transition-timing-function: cubic-bezier(0,1.07,.14,.91); */
+        /* 设置延迟时间 */
+        /* transition-delay: 2s; */
+
+        /* 简写 */
+        /* transition: width 2s linear,height 3s ease; */
+        transition: all 2s linear;
+    }
+    .box:hover{
+        width: 800px;
+        height: 400px;
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

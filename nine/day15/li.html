@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .one{
+        width:540px;
+        height: 40px;
+        text-align:center;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px;
+
+    }
+    .one li{
+        background-color: aqua;
+        width:100px;
+        height:40px;
+    }
+    .one li:nth-child(1){
+        position: relative;
+    }
+    .one li:nth-child(1):hover .two{
+        height: 200px;
+    }
+    .two{
+        overflow: hidden;
+        height:0;
+        transition: all 2s linear;
+    }
+    .two li{
+        background-color: orange;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <ul class="one">
+        <li>
+            标题1
+            <ul class="two">
+                <li>子标题</li>
+                <li>子标题</li>
+                <li>子标题</li>
+                <li>子标题</li>
+            </ul>
+        </li>
+        <li>标题2</li>
+        <li>标题3</li>
+        <li>标题4</li>
+        <li>标题5</li>
+    </ul>
+</body>
+</html>

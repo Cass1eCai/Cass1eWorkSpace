@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 1px solid;
+    }
+    .box div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 4px;
+        transition: all 2s;
+    }
+    .box:hover div{
+       width: 900px;
+    }
+    .box div:nth-child(1){
+        transition-timing-function: linear;
+    }
+    .box div:nth-child(2){
+        transition-timing-function: ease;
+    }
+    .box div:nth-child(3){
+        transition-timing-function: ease-in;
+    }
+    .box div:nth-child(4){
+        transition-timing-function: ease-out;
+    }
+    .box div:nth-child(5){
+        transition-timing-function: ease-in-out;
+    }
+</style>
+<body>
+    <div class="box">
+        <div>linear</div>
+        <div>ease</div>
+        <div>ease-in</div>
+        <div>ease-out</div>
+        <div>ease-in-out</div>
+    </div>
+</body>
+</html>

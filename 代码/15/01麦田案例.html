@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 340px;
+        height: 260px;
+        background-color: #eee;
+        margin-top: 100px;
+        position: relative;
+        text-align: center;
+       float: left;
+       margin-right:30px ;
+    }
+    .small{
+        width: 130px;
+        height: 130px;
+        background-color: red;
+        position: absolute;
+        left: calc(50% - 65px);
+        top: -65px;
+        background-image: url(./img01.png);
+    }
+    .box:nth-child(2) .small{
+        /* 精灵图核心属性 */
+        background-position: 0 -162px;
+    }
+    .box:nth-child(3) .small{
+        background-position: 0 -324px;
+    }
+    .title{
+        line-height: 1;
+        margin-bottom: 16px;
+        margin-top: 96px;
+    }
+    .txt{
+        font-size: 12px;
+        line-height: 30px;
+        padding: 0 44px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="small"></div>
+        <div class="title">我们的设计</div>
+        <div class="txt">我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计</div>
+    </div>
+    <div class="box">
+        <div class="small"></div>
+        <div class="title">我们的设计</div>
+        <div class="txt">我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计</div>
+    </div>
+    <div class="box">
+        <div class="small">
+
+        </div>
+        <div class="title">我们的设计</div>
+        <div class="txt">我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计我们的设计</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid; */
+        position: relative;
+        margin: 200px;
+        /* perspective: 800px; */
+        /* 保留真3d */
+        transform-style: preserve-3d;
+        transition: all 4s linear;
+        /* transform: rotatex(90deg); */
+    }
+    .box div{
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 200px;
+        font-weight: 900;
+        color: #fff;
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
+        backface-visibility: hidden;
+    }
+    .box div:nth-child(1){
+        background-color: red;
+        transform: translateY(-100px) rotateX(90deg);
+    }
+    .box div:nth-child(2){
+        background-color: green;
+        transform: translateY(100px) rotateX(-90deg);
+    }
+    .box div:nth-child(3){
+        background-color: aqua;
+        transform: translateX(-100px) rotateY(-90deg);
+    }
+    .box div:nth-child(4){
+        background-color: orange;
+       transform: translateX(100px) rotateY(90deg);
+    }
+    .box div:nth-child(5){
+        background-color: blue;
+        transform: translateZ(-100px) rotateY(180deg);
+    }
+    .box div:nth-child(6){
+        background-color: pink;
+        transform: translateZ(100px);
+        
+    }
+    .box:hover{
+        transform: rotatex(360deg) rotateY(360deg) scaleZ(2);
+    }
+
+</style>
+<body>
+    <div class="box">
+        <div>top</div>
+        <div>bottom</div>
+        
+        <div>left</div>
+        <div>right</div>
+        <div>after</div>
+        <div>before</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .demo{
+        display: flex;
+        width:1000px;
+        height:200px;
+        background-color: black;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .box1{
+        width:100px;
+        height:100px;
+        background-color: rgb(255,255,255);
+        display: flex;
+        border:8px solid rgb(255,255,255);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1 span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box2{
+        width:100px;
+        height:100px;
+        background-color: rgb(255,255,255);
+        display: flex;
+        border:8px solid rgb(255,255,255);
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    .box2 span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box2 span:nth-child(2){
+        align-self: flex-end;
+    }
+    .box3{
+        width:100px;
+        height:100px;
+        background-color: rgb(255,255,255);
+        display: flex;
+        border:8px solid rgb(255,255,255);
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    .box3 span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box3 span:nth-child(2){
+        align-self: center;
+    }
+    .box3 span:nth-child(3){
+        align-self: flex-end;
+    }
+    .box4,.box5,.box6{
+        width:100px;
+        height:100px;
+        background-color: rgb(255,255,255);
+        border:8px solid rgb(255,255,255);
+        border-radius: 10px;
+    }
+    .box4 .top{
+        width:100px;
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box4 .top span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box4 .bottom{
+        width:100px;
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .box4 .bottom span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box5 .top{
+        width:100px;
+        height:33px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box5 .top span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box5 .middle{
+        width:100px;
+        height:34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box5 .middle span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box5 .bottom{
+        width:100px;
+        height:33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .box5 .bottom span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box6 .top{
+        width:100px;
+        height:33px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box6 .top span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box6 .middle{
+        width:100px;
+        height:34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box6 .middle span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box6 .bottom{
+        width:100px;
+        height:33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .box6 .bottom span{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="demo">
+        <div class="box1">
+            <span></span>
+        </div>
+        <div class="box2">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="box3">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="box4">
+            <div class="top">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="bottom">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="top">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="middle">
+                <span></span>
+            </div>
+            <div class="bottom">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="top">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="middle">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="bottom">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

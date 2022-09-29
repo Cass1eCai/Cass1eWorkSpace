@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one{
+        border: 1px solid;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 1000px;
+        height: 400px;
+        /* 设置弹性盒子 */
+        display: flex;
+        /* 设置主轴的排列方向 */
+        flex-direction: column;
+        /*
+        属性值：
+            row:自左而右
+            row-reverse:自右而左
+            column:自上而下
+            column-reverse:自下而上
+        */
+
+        /* 设置弹性子元素在主轴上的对齐方式 */
+        /* justify-content:center; */
+        /* 
+        flex-start:起点对齐
+        flex-end:终点对齐
+        center:居中对齐
+        space-between:两端对齐
+        space-around:边距对齐
+        space-evenly:平分剩余空间
+        */
+        /* 设置单行弹性子元素在侧轴对齐 */
+        /* align-items: baseline; */
+        /* 
+        stretch:拉伸对齐
+        flex-start:起点对齐
+        flex-end:终点对齐
+        center:居中对齐
+        baseline:基线对齐
+        */
+
+        /* 
+        弹性子元素默认不会换行，放不下的时候，会收缩
+        */
+        flex-wrap: wrap;
+        /* 
+        wrap:换行
+        wrap-reverse:反向换行
+        nowrap:不换行
+        */
+
+        /* 简写 */
+        /* flex-flow:主轴排列方向 换行  */
+        /* flex-flow: column wrap; */
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+
+        /* 设置多行弹性子元素在侧轴上的对齐方式 */
+        /* align-content: space-evenly; */
+        /* 
+        stretch:默认值 拉伸对齐
+        flex-start:起点对齐
+        flex-end:终点对齐
+        center:居中对齐
+        space-between:两端对齐
+        space-around:边距对齐
+        space-evenly:平分剩余空间
+        */
+
+        align-items: center;
+
+
+    }
+    li{
+        width: 100px;
+        height: 40px;
+        background-color: red;
+        text-align: center;
+        line-height: 40px;
+    }
+</style>
+<body>
+    <ul class="one">
+        <li>首页</li>
+        <li>走进千锋</li>
+        <li>人才服务</li>
+        <li>好程序员</li>
+        <li>千锋教育</li>
+    </ul>
+    
+</body>
+</html>

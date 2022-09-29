@@ -1,0 +1,23 @@
+{
+  "id": "3661695",
+  "name": "2209",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "637378",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    textarea{
+        /* 禁止用户拖拽文本域 */
+        /* resize: none; */
+    }
+</style>
+<body>
+    <!-- 
+        表单控件：
+        输入框：
+            input:text
+        密码框：
+            input:password
+        提交按钮：
+            input:submit
+        重置按钮：
+            input:reset
+        空按钮：
+            input:button
+     -->
+    
+     <form action="">
+        <label for="one">姓名：</label>
+        <input type="text" name="txt" id="one" width="600px"><br>
+        <label for="two">密码</label>
+        <input type="password" name="" id="two"><br>
+        <!-- 单选框 -->
+        性别：
+        <!-- 同组别的单选，有着相同的name属性值 需要定义value字段-->
+        <!-- 
+            checked:属性，控制哪一个选项被勾选  只针对单选和多选
+            disabled:控件不可用
+         -->
+            <input type="radio" name="box" id="" value="0" checked="checked">男
+            <input type="radio" name="box" id="" value="1">女<br>
+        爱好：
+        <!-- 同组别的多选，有着相同的name属性值 需要定义value字段-->
+            <input type="checkbox" name="hobby" id="" value="0" checked>学习
+            <input type="checkbox" name="hobby" id="" value="1" checked>敲代码
+            <input type="checkbox" name="hobby" id="" value="2">写页面
+            <input type="checkbox" name="hobby" id="" value="3" disabled>打游戏<br>
+
+
+        <!-- 隐藏字段提交 -->
+        <input type="hidden" name="hide" value="9999">
+        <!-- 上传文件 -->
+        <!-- 
+            multiple:可以上传多个文件
+         -->
+        <input type="file" name="" id="" multiple><br>
+
+
+        <!-- 文本域 -->
+        简介：
+        <textarea name="" id="" cols="10" rows="10"></textarea>
+        <!-- 
+            cols:列数  （必须出现纵向滚动条）
+            rows:行数
+            一个汉字是两个字符
+         -->
+
+         <!-- 下拉列表 -->
+        <select name="ao" id="">
+            <option value="0">西瓜</option>
+            <option value="1">苹果</option>
+            <option value="2" selected>香蕉</option>
+        </select>
+
+        <!-- 下拉列表分组 -->
+        <select name="bo" id="">
+            <optgroup label="水果">
+                <option value="0" label="葡萄">西瓜西瓜西瓜西瓜西瓜西瓜西瓜西瓜西瓜</option>
+                <option value="1">苹果</option>
+                <option value="2">香蕉</option>
+            </optgroup>
+            <optgroup label="车">
+                <option value="3">三轮车</option>
+                <option value="4" selected>两轮车</option>
+                <option value="5">独轮车</option>
+            </optgroup>
+        </select>
+        <!-- 
+            optgroup 上面的label是分组名称
+            option：长文本替换文字
+            selected：切换下拉框达到被选项
+         -->
+
+        <!-- 将图片作为提交按钮 -->
+        <input type="image" src="../图片合集/14.jpg" alt="" width="300px" title="图片">
+
+        <!-- 语义化标签 -->
+        <!-- 类似与提交按钮 -->
+        <button type="reset">按钮</button>
+
+
+
+           
+
+
+
+        <input type="submit">
+
+     </form>
+</body>
+</html>

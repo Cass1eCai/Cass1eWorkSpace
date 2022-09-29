@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3673312 */
+  src: url('iconfont.woff2?t=1664184712487') format('woff2'),
+       url('iconfont.woff?t=1664184712487') format('woff'),
+       url('iconfont.ttf?t=1664184712487') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tupian:before {
+  content: "\e600";
+}
+
+.icon-zhuanshi:before {
+  content: "\e6ad";
+}
+
+.icon-fangdajing:before {
+  content: "\e60d";
+}
+
+.icon-iconset0219:before {
+  content: "\e676";
+}
+
+.icon-shouye:before {
+  content: "\e6cb";
+}
+
+.icon-shouye1:before {
+  content: "\e615";
+}
+
+.icon-dengpao:before {
+  content: "\e631";
+}
+
+.icon-fanhui:before {
+  content: "\e601";
+}
+
+.icon-gengduo:before {
+  content: "\e602";
+}
+
+.icon-fenlei:before {
+  content: "\e62f";
+}
+
+.icon-wendang:before {
+  content: "\e63d";
+}
+
+.icon-fsux_tubiao_masaiketu:before {
+  content: "\e603";
+}
+
+.icon-gengduo1:before {
+  content: "\e604";
+}
+
+.icon-huaban:before {
+  content: "\e63f";
+}
+
+.icon-gangbi:before {
+  content: "\e6c9";
+}
+
+.icon-shipin:before {
+  content: "\e605";
+}
+

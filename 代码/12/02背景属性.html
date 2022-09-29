@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 10px double;
+        background-image: url(../图片合集/17.jpg);
+        background-repeat: no-repeat;
+        /* 设置背景图的起点 */
+        background-origin: content-box;
+        /* 
+        属性值：
+            padding-box:    默认值 padding区域开始显示
+            border-box:     border区域开始显示
+            content-box:    内容区域开始显示
+
+            只针对背景图
+        */
+    }
+    .one{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 10px double;
+        /* background-color: red; */
+        background-image: url(../图片合集/19.jpg);
+        /* 设置背景的裁剪效果 */
+        background-clip: content-box;
+        /* 
+        属性值：
+            padding-box:    padding区域开始裁剪
+            border-box:     默认值 border区域开始裁剪
+            content-box:    内容区域开始裁剪
+         */
+    }
+    .two{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        /* 背景属性简写 */
+        background:  url(../图片合集/11.jpg) no-repeat right/50px,red url(../图片合集/12.jpg) no-repeat left/50px;
+    }
+</style>
+<body>
+    <div class="box"></div>
+
+    <div class="one"></div>
+
+
+    <div class="two"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: 2s linear;
+    }
+    .box:hover{
+        /* 可以为负值，对于x轴平移 %是针对于自身的宽度*/
+        /* transform: translateX(50%); */
+        /* 可以为负值，对于y轴平移 %是针对于自身的高度*/
+        /* transform: translatey(50%); */
+        /* transform: translateY(-100px); */
+        /* transform: translateX(100px) translateY(100px); */
+        transform: translate(100px,100px);
+    }
+
+
+
+
+  
+</style>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

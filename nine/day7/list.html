@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .box{
+        width: 416px;
+        height:300px;
+        border: 1px solid;
+        margin: 0 auto;
+        position: relative;
+    }
+    .list_li{
+        height:40px;
+        width:100px;
+        background-color: aqua;
+        margin-right: 4px;
+        float:left;
+        text-align: center;
+        line-height: 40px;
+    }
+    .small{
+        width:416px;
+        height: 260px;
+        background-color: blueviolet;
+        display: none;
+    }
+    .list_li:hover .small{
+        display: block;
+    }
+    .small{
+        position:absolute;
+        left:0px;
+    }
+    .small li{
+        float:left;
+        width:100px;
+        height:40px;
+        margin: 4px;
+        background-color: chocolate;
+    }
+</style>
+<body>
+   <div class="box">
+    <ul class="list">
+        <li class="list_li">导航1
+            <ul class="small">
+                <li>文本1</li>
+                <li>文本2</li>
+                <li>文本3</li>
+            </ul>
+        </li >
+        <li class="list_li">导航2
+            <ul class="small">
+                2
+            </ul>
+        </li>
+        <li class="list_li">导航3
+            <ul class="small">
+                3
+            </ul>
+        </li>
+        <li class="list_li">导航4
+            <ul class="small">
+                4
+            </ul>
+        </li>
+    </ul>
+   </div>
+</body>
+</html>

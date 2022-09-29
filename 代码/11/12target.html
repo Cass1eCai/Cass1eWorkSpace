@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        height: 700px;
+    }
+    .box1{
+        background-color: red;
+    }
+    .box2{
+        background-color: rgb(42, 225, 29);
+    }
+    .box3{
+        background-color: rgb(44, 24, 216);
+    }
+    .box4{
+        background-color: rgb(235, 49, 167);
+    }
+    .box5{
+        background-color: rgb(218, 233, 58);
+    }
+    .box6{
+        background-color: rgb(2, 2, 2);
+        /* 设置透明 */
+        opacity: .5;
+        color: red;
+    }
+    .top{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    :target{
+        border: 10px solid black;
+    }
+</style>
+<body>
+     <div class="top">
+        <a href="#one1">box1</a>
+        <a href="#one2">box2</a>
+        <a href="#one3">box3</a>
+        <a href="#one4">box4</a>
+        <a href="#one5">box5</a>
+        <a href="#one6">box6</a>
+     </div>
+     <div class="box1" id="one1">1</div>
+     <div class="box2" id="one2">2</div>
+     <div class="box3" id="one3">3</div>
+     <div class="box4" id="one4">4</div>
+     <div class="box5" id="one5">5</div>
+     <div class="box6" id="one6">6</div>
+</body>
+</html>

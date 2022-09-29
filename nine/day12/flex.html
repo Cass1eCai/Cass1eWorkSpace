@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding:0px;
+    }
+    .box{
+        width:800px;
+        height:400px;
+        list-style: none;
+        display: flex;
+        border: 1px solid;
+        margin: 5px;
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        /* align-content: ; */
+    }
+    li{
+        width:100px;
+        height: 50px;
+        background-color: aqua;
+        text-align: center;
+        line-height: 50px;
+    }
+    li:nth-child(2){
+        align-self: center;
+    }
+</style>
+<body>
+    <ul class="box">
+        <li>首页</li>
+        <li>秦风教育</li>
+        <li>千锋教育</li>
+        <li>黑马</li>
+        <li>弹性魔盒</li>
+        <li>首页</li>
+        <li>秦风教育</li>
+        <li>千锋教育</li>
+        <li>黑马</li>
+        <li>弹性魔盒</li>
+    </ul>
+</body>
+</html>

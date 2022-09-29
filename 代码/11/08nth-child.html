@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        width: 100px;
+        height: 40px;
+        border: 1px solid;
+        float: left;
+        margin: 6px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .three{
+        background-color: red;
+    }
+    /* 结构伪类
+    先找位置，再找元素，只要位置与元素对应，样式就会生效
+    :nth-child(number){
+
+    }
+    不限定元素类型
+    */
+
+    /* 匹配父元素box里面的第四个子元素是li的元素 */
+    .box li:nth-child(4){
+        background-color: green;
+    }
+    .box li:nth-child(5){
+        background-color: pink;
+    }
+    .box li:nth-child(6){
+        background-color: orange;
+    }
+    .box li:nth-child(11){
+        background-color: aqua;
+    }
+    .box li:nth-last-child(1){
+        background-color: red;
+    }
+
+    /* 
+    偶数：2n    even
+    奇数：2n+1  odd
+    */
+    .box li:nth-child(2n){
+        border: 6px solid yellow;
+    }
+    .box li:nth-child(2n+1){
+       border: 6px solid purple;
+    }
+
+    .box li:first-child{
+        background-color: black;
+    }
+
+    .box li:last-child{
+        background-color: violet;
+    }
+
+
+</style>
+<body>
+    <ul class="box">
+        <li>1</li>
+        <p>这是第一个p标签</p>
+        <li>首页</li>
+        <li>走进千锋</li>
+        <p>这是第二个p标签</p>
+        <p>这是第三个p标签</p>
+        <li class="three">人才服务</li>
+        <li>4好程序员</li>
+        <span>123</span>
+        <li>5千锋教育</li>
+        <h1>1111</h1>
+        <li>6扣丁学堂</li>
+        <li>app外包</li>
+        <li>培训服务</li>
+        <li>创业孵化</li>
+        <span></span>
+    </ul>
+    
+</body>
+</html>

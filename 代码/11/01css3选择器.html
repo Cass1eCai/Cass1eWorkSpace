@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box>div{
+       
+    }
+    .box div{
+        /* 找.box里面的所有的div */
+        /* width: 200px;
+        height: 200px;
+        background-color: red; */
+    }
+    .box+div{
+        /* width: 200px;
+        height: 200px;
+        background-color: red; */
+    }
+    .box~div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+</style>
+<body>
+    <!-- 
+        层级选择器
+        E > F : F是E的直接子元素
+        E ~ F : F和E是兄弟关系，并且，F是E的下面的所有兄弟元素
+        E + F : F和E是兄弟关系，并且，F是E的下面的第一个兄弟元素
+     -->
+    <div class="box0">
+        box0
+    </div>
+
+     <div class="box">
+        0
+        <div class="son1">1</div>
+        <div class="son2">2
+            <div class="three">3</div>
+        </div>
+     </div>
+
+    <div class="box1">
+        box1
+    </div>
+
+    <div class="box2">
+        box2
+        <div class="box3">
+            box3
+        </div>
+    </div>
+
+
+     <!-- 二级菜单 -->
+
+
+     <!-- .box>li{}
+     .box li{}
+     <ul class="box">
+        <li>
+            <ul>
+                <li></li>
+            </ul>
+        </li>
+     </ul> -->
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+html{
+    font-size: 32vw;
+    height: 100%;
+}
+body{
+    font-size: 0.07rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height:0.38rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.13rem;
+}
+header img{
+    width: 0.27rem;
+    height: 0.27rem;
+}
+header input{
+    width:1.77rem;
+    height:0.25rem;
+    border-radius: 0.04rem;
+    outline: none;
+    font-size: 0.1rem;
+    border: 0.01rem solid rgb(221,221,221);
+}
+header p{
+    font-size: 0.13rem;
+    color: rgb(66, 195, 96);
+}
+header .people{
+    background-color:rgb(66, 195, 96);
+    border-radius: 40%/50%;
+}
+input::-webkit-input-placeholder{
+    color: rgb(153,153,153);
+}
+main{
+    flex: 1;
+    overflow: auto;
+}
+.banner img{
+    width:3.13rem;
+    display: block;
+}
+.part1{
+    height: 1.67rem;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 0.82rem 0.56rem;
+    background-position: right bottom;
+}
+.part1 .top{
+    height:50%;
+    display: flex;
+}
+.part1 .bottom{
+    height:50%;
+    display: flex;
+}
+.part1 .top .one{
+    background-position:-1.87rem -0.93rem;
+}
+.part1 .top .two{
+    background-position-x: -0.93rem;
+}
+.part1 .top .three{
+    background-position: -0.47rem -1.4rem;
+}
+.part1 .top .four{
+    background-position-x:-1.4rem;
+}
+.part1 .bottom .one{
+    background-position-x:-1.87rem;
+}
+.part1 .bottom .two{
+    background-position: -0.47rem -0.93rem;
+}
+.part1 .bottom .three{
+    background-position:-1.4rem -0.93rem;
+}
+.part1 .bottom .four{
+    background-position:-1.87rem -1.4rem;
+}
+.part1 .small{
+    width:25%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.part1  .box{
+    background-image:url(../img/1.png);
+    background-size: 2.29rem 2.29rem;
+    width:0.42rem;
+    height:0.42rem;
+    border-radius: 0.04rem;
+    margin-top: 0.15rem;
+}
+.part1 .small p{
+    font-size: 0.12rem;
+    color: rgb(51, 51, 51);
+    margin-top:0.05rem ;
+}
+.part2{
+    height: 1.26rem;
+    padding: 0.09rem 0;
+    background-color: rgb(242, 242, 242);
+}
+.part2 .box{
+    height:1.09rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 0.08rem;
+}
+.part2 img{
+    width: 0.68rem;
+    height: 0.91rem;
+}
+.part3{
+    height: 4.91rem;
+    
+}
+.line1{
+    height:0.35rem;
+    font-size: 0.13rem;
+    color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.line1 li{
+    width:1.04rem;
+    border-right: 1px solid rgb(221,221,221);
+    text-align: center;
+}
+.line1 li:nth-child(3){
+    border: 0;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border-bottom: 1px solid rgb(66, 195, 96);
+}
+.line2{
+    height:0.84rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.09rem 0.11rem;
+    border-bottom: 1px solid rgb(221,221,221);
+    position: relative;
+}
+.line2 img{
+    width:1rem;
+    height: 0.67rem;
+    border-radius: 0.04rem;
+}
+.line2 .title{
+    width: 0.4rem;
+    height: 0.15rem;
+    background-color: rgb(66, 195, 96);
+    border-radius: 0.04rem 0 0.15rem 0 ;
+    position: absolute;
+    top: 0.09rem;
+    left:0.11rem;
+    font-size: 0.1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.line2 .txt{
+    padding-left: 0.08rem;
+}
+.line2 .txt .p1{
+    font-size: 0.12rem;
+    margin-bottom: 0.02rem;
+}
+.line2 .txt .p2 span{
+    font-size: 0.1rem;
+    padding: 0.02rem;
+    border: 1px solid rgb(221,221,221);
+    border-radius: 6px;
+    margin-right: 0.02rem;
+    color: rgb(221,221,221);
+}
+.line2 .txt .p3{
+    font-size: 0.1rem;
+    color: rgb(221,221,221);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.02rem;
+}
+.line2 .txt .p3 .one{
+    font-size: 0.12rem;
+    color: rgb(255, 102, 0);
+}
+.arrive{
+    height: 0.35rem;
+    font-size: 0.13rem;
+    color: rgb(66, 195, 96);
+    text-align: center;
+    line-height: 0.35rem;
+}
+.part4{
+    height: 1.08rem;
+    background-color:rgb(221,221,221);
+    padding-top: 0.08rem;
+}
+.part4 .box{
+    height: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+.part4 .top{
+    height: 0.33rem;
+    display: flex;
+    color: rgb(85,85,85);
+    font-size: 0.12rem;
+}
+.part4 .top li{
+    width:25%;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    text-align: center;
+    border: 1px solid rgb(221,221,221);
+}
+.part4 .bottom{
+    color: rgb(153, 153, 153);
+    font-size: 0.1rem;
+    line-height: 0.33rem;
+    height: 0.33rem;
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        border-radius: 6px;
+        border: 1px solid;
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .box:nth-child(1){
+        justify-content: center;
+        align-items: center;
+    }
+    .box:nth-child(2), .box:nth-child(3){
+        justify-content: space-between;
+    }
+    span{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .box:nth-child(2) span:nth-child(2){
+        align-self: flex-end;
+    }
+    .box:nth-child(3) span:nth-child(2){
+        align-self: center;
+    }
+    .box:nth-child(3) span:nth-child(3){
+        align-self: flex-end;
+    }
+    .box:nth-child(4),.box:nth-child(5),.box:nth-child(6){
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box:nth-child(5) div:nth-child(2){
+        justify-content: center;
+    }
+
+    .box div{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+</style>
+<body>
+    <div class="box">
+        <span></span>
+    </div>
+    <div class="box">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="box">
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="box">
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="box">
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</body>
+</html>

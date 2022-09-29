@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one{
+        border: 1px solid;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 1000px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    li{
+        width: 100px;
+        height: 40px;
+        background-color: red;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid;
+    }
+    li:nth-child(2){
+        /* 设置自己独立的对齐方式（侧轴） */
+        /* align-self: center; */
+        /* 
+            auto: 默认值
+            center
+            flex-start
+            flex-end
+            stretch
+            baseline
+        */
+
+        /* 占据剩余空间 */
+        /* flex-grow: 2; */
+        /* 
+        默认值是0
+        */
+    }
+    li:nth-child(5){
+        /* 设置排列顺序 */
+        /* order: -1; */
+        /* flex-grow: 1; */
+        /* flex: 2 0 auto; */
+    }
+    li:nth-child(3){
+        /* 设置排列顺序 */
+        /* order: -3; */
+        /* 值越小，越靠前 默认值 0  可以为负值*/
+
+        /* flex-grow: 2; */
+        /* flex-shrink: 2; */
+        /* 
+        默认值1
+        */
+
+        /* 设置基准值 */
+        /* flex-basis: 200px; */
+        /* 
+        默认值auto
+        主轴水平时，指的是宽
+        主轴垂直时，指的是高
+        */
+
+
+        /* flex: 0 1 auto; */
+        /* flex: 2 1 200px; */
+
+        /* flex: 1;   ===   flex-grow: 1; */
+
+
+    }
+</style>
+<body>
+    <ul class="one">
+
+        <li>首页</li>
+        <li>走进千锋</li>
+        <li>人才服务</li>
+        <li>好程序员</li>
+        <li>千锋教育</li>
+    </ul>
+    
+</body>
+</html>

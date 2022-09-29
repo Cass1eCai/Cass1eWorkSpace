@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .box{
+        display: flex;
+    }
+    .box>li{
+        width: 100px;
+        height: 40px;
+        background-color: aqua;
+        margin: 4px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 6px;
+    }
+    .box>li:hover{
+        background-color: pink;
+    }
+    .box ul{
+        height: 200px;
+        background-color: red;
+        overflow: hidden;
+        /* display: none; */
+        transition: all 2s linear;
+
+        opacity: 0;
+
+
+    }
+    .box>li:hover ul{
+        /* display: block; */
+        /* height: 200px; */
+        opacity: 1;
+    }
+    /* .box ul li{
+        height: 40px;
+        background-color: purple;
+        border-radius: 6px;
+        margin: 6px 0;
+    } */
+
+</style>
+<body>
+    <ul class="box">
+        <li>一级
+            <ul>
+                <!-- <li>二级</li>
+                <li>二级</li>
+                <li>二级</li>
+                <li>二级</li> -->
+            </ul>
+        </li>
+        <li>一级</li>
+        <li>一级</li>
+        <li>一级</li>
+        <li>一级</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    table{
+        /* 合并边框线 */
+        border-collapse: collapse;
+    }
+    td{
+        width: 100px;
+        height: 40px;
+        border: 1px solid;
+        text-align: center;
+    }
+    .last{
+        width: 200px;
+    }
+    .last img{
+        width: 100%;
+        height: 166px;
+        display: block;
+        float: left;
+     
+    }
+    caption{
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+</style>
+<body>
+    <table>
+        <!-- caption一定要放在table的第一个子元素的位置 -->
+        <caption>表格标题</caption>
+        <tr>
+            <td>姓名</td>
+            <td></td>
+            <td>性别</td>
+            <td></td>
+            <td>出生年月</td>
+            <td></td>
+            <td rowspan="4" class="last">
+                <img src="../图片合集/16.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>

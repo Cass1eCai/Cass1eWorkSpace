@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(181, 179, 179);
+        /* overflow: hidden; */
+    }
+    .box{
+        width:800px;
+        height:500px;
+        border:3px solid rgb(255,255,255);
+        margin: 0 auto;
+    }
+    .header1,.footer1{
+        width:800px;
+        height:60px;
+        background-color: coral;
+        color: rgb(255,255,255);
+        font-size: 20px;
+        text-align: center;
+        line-height: 60px;
+        font-weight: bold;
+    }
+    main{
+        width:800px;
+        height: 380px;
+        background-color:rgb(109, 108, 108);
+        }
+    nav{
+        width:180px;
+        height:380px;
+        padding:0px 10px;
+        /* background-color: rgb(23, 178, 90); */
+        float: left;
+    }
+    aside{
+        width:170px;
+        height:380px;
+        padding:0px 15px;
+        /* background-color: darkkhaki; */
+        float: left;
+    }
+    section{
+        width:400px;
+        height:380px;
+        /* background-color: darkorchid; */
+        float: left;
+    }
+    .nav_p{
+        color:rgb(255,255,255);
+        height:30px;
+        font-size: 16px;
+        text-align: center;
+        line-height:50px ;
+        font-weight: bold;
+    }
+    ul{
+        list-style: none;
+        margin-top: 30px;;
+    }
+    li{
+        height:30px;
+        border-bottom:2px solid rgb(255,255,255);
+        font-size: 12px;
+        color:coral;
+        line-height: 30px;
+    }
+    .aside_txt{
+        color:rgb(255,255,255);
+        font-size: 12px;
+        margin-top:30px ;
+    }
+    .aside_txt span{
+        color: black;
+        background-color:gold;
+    }
+    .one,.two{
+        background-color: rgb(255,255,255);
+        margin-top: 10px;
+    }
+    .one{
+        height:180px;
+        overflow: hidden;
+        padding: 10px;
+    }
+    .two{
+        height:120px;
+        overflow: hidden;
+        padding: 10px;
+    
+    }
+    .header2,.footer2{
+        height: 30px;
+        width:380px;
+        background-color: coral;
+        color: rgb(255,255,255);
+        font-size:16px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .top{
+        height: 120px;
+    
+    }
+    .bottom{
+        height:60px;
+    }
+    article p{
+        font-size: 12px;
+    }
+    .pp1{
+        margin-top: 10px;
+
+    }
+</style>
+<body>
+    <div class="box">
+        <header class="header1">HEADER</header>
+        <main>
+            <nav>
+                <p class="nav_p">nav</p>
+                <ul>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                </ul>
+            </nav>
+            <section>
+                <article class="one">
+                    <header class="header2">Article Header</header>
+                    <div class="top">
+                        <p class="pp1">gygugi jdeijwio gydeg dbeug bdueg veyg yuwg uihewui gygugi jdeijwio gydeg dbeug bdueg veyg yuwg uihewui eg veyg yuwg uihewui</p>
+                        <p class="pp1">gygugi jdeijwio gydeg dbeug bdueg veyg yuwg uihewui eg veyg yuwg uihewui</p>
+                    </div>
+                    <footer class="footer2">Article Footer</footer>
+                </article>
+                <article class="two">
+                    <header class="header2">Article Header</header>
+                    <div class="bottom">
+                        <p class="pp2">gygugi jdeijwio gydeg dbeug bdueg veyg yuwg uihewui gygugi jdeijwio gydeg dbeug bdueg veyg yuwg uihewui eg veyg yuwg uihewui</p>
+                    </div>
+                    <footer class="footer2">Article Footer</footer>
+                </article>
+            </section>
+            <aside>
+                <p class="nav_p">Aside</p>
+                <p class="aside_txt">
+                    <span>HTML5:</span>
+                    "Lyeuni niowehh ncidhui webfhug chdgvyu cbv cdhug yegfyu bduew bcyu bcu buewh bgewuih 
+                </p>
+            </aside>
+        </main>
+        <footer class="footer1">FOOTER</footer>
+    </div>
+</body>
+</html>

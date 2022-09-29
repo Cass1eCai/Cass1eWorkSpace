@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 音频 -->
+    <audio src="./a.mp3" controls loop muted autoplay></audio>
+    您的浏览器不支持音频标签，请切换高版本浏览器！
+     <!-- 
+        src:引入资源地址
+        controls：播放控件
+        loop:循环播放
+        muted:静音
+        autoplay:自动播放
+        preload:预加载，不与autoplay同时使用
+     -->
+     <audio>
+        <source src="./a.mp3" type="audio/mp3">
+        <source src="./a.ogg" type="audio/ogg">
+        <source src="./a.wav" type="audio/wav">
+        <!-- 
+            source:作为浏览器兼容音频格式使用，
+         -->
+     </audio>
+</body>
+</html>

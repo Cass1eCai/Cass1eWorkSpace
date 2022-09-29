@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 800px;
+        height: 400px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box div{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: aqua;
+        transition: all 2s;
+        margin: 0 10px;
+    }
+    .box div:nth-child(1){
+        transition-delay: 0;
+    }
+    .box:hover div:nth-child(1){
+        height: 60px;
+    }
+
+    .box div:nth-child(2){
+        transition-delay: .4s;
+    }
+    .box:hover div:nth-child(2){
+        height: 90px;
+    }
+
+    .box div:nth-child(3){
+        transition-delay: .8s;
+    }
+    .box:hover div:nth-child(3){
+        height: 120px;
+    }
+
+    .box div:nth-child(4){
+        transition-delay: 1.2s;
+    }
+    .box:hover div:nth-child(4){
+        height: 150px;
+    }
+
+    .box div:nth-child(5){
+        transition-delay: 1.6s;
+    }
+    .box:hover div:nth-child(5){
+        height: 120px;
+    }
+
+    .box div:nth-child(6){
+        transition-delay: 2s;
+    }
+    .box:hover div:nth-child(6){
+        height: 90px;
+    }
+
+    .box div:nth-child(7){
+        transition-delay: 2.4s;
+    }
+    .box:hover div:nth-child(7){
+        height: 60px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+</body>
+</html>

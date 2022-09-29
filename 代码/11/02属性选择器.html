@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    /* 
+    E[attr]:          匹配E元素，并且该元素具备attr属性即可 
+    E[attr="value"]:  匹配E元素，并且该元素具备attr=value即可 
+    E[attr~="value"]: 匹配E元素，并且该元素多个属性值中有一个属性值满足条件即可
+    E[attr|="value"]: 匹配E元素，并且该元素属性值要么是value 要么是以value-开头的属性值
+
+    E[attr^="value"]: 匹配E元素，并且该元素具备attr属性，并且属性值以value开头
+    E[attr$="value"]: 匹配E元素，并且该元素具备attr属性，并且属性值以value结尾
+    E[attr*="value"]: 匹配E元素，并且该元素具备attr属性，并且属性值中包含value即可
+    */
+    img[title]{
+        /* width: 200px;
+        height: 200px; */
+    }
+    /* img[alt='2']{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+    } */
+    /* img[box="two"]{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+    } */
+    img[box|="two"]{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+    }
+    /* img[box^="o"]{
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+    }
+    img[box$="e"]{
+        width: 200px;
+        height: 100px;
+        border: 10px solid blue;
+    }
+    img[box*="h"]{
+        width: 100px;
+        height: 100px;
+        border: 10px solid yellow;
+    } */
+
+
+  </style>
+
+<body>
+    <img src="../图片合集/16.jpg" alt="2" box="one two">
+
+    <img src="../图片合集/17.jpg" title="" alt="2" box="two">
+
+    <img src="../图片合集/18.jpg" alt="3" box="two-one">
+
+    <img src="../图片合集/19.jpg" alt="3" box="two_one three">
+
+    <img src="../图片合集/20.jpg" alt="3" box="two-">
+    <img src="../图片合集/21.jpg" alt="3" box="two-one three">
+    <img src="../图片合集/21.jpg" alt="3" box="three two-one">
+    <img src="../图片合集/22.jpg" alt="3" box="one-two">
+    
+</body>
+</html>

@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+html{
+    height: 100%;
+    font-size: 32vw;
+}
+body{
+    height: 100%;
+    font-size: 0.07rem;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    width:100%;
+    flex: 1;
+    overflow: auto;
+    position: relative;
+}
+.main .header{
+    width:100%;
+    height: 0.5rem;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.13rem;
+    box-sizing: border-box;
+    position: absolute;
+}
+.main .header input{
+    width: 2.48rem;
+    height: 0.25rem;
+    border-radius: 0.13rem;
+    background-color:rgba(8, 8, 8, 0.4);
+    font-size: 0.11rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+input::-webkit-input-placeholder{
+    color: #ffffff;
+}
+.banner{
+    width: 100%;
+    display: block;
+}
+.part1{
+    height: 1.54rem;
+    width:100%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.part1 .small_box{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part1 .small_box img{
+    width: 0.37rem;
+    margin-bottom: 0.08rem;
+}
+.part1 .small_box p{
+    color: rgb(100, 100, 100);
+    font-size: 0.11rem;
+}
+.part2{
+    height:0.71rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.13rem 0 0.16rem 0;
+    background-color: rgb(245,245,245);
+}
+.part2 .small_box{
+    height: 50%;
+    width: 1.04rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.part2 .small_box img{
+    height:0.18rem;
+    margin-right: 0.06rem;
+}
+.part2 .small_box p{
+    color:rgb(64, 64, 64);
+    font-size: 0.11rem;
+}
+.part2 .one{
+    border-bottom: 0.01rem solid rgb(245,245,245);
+}
+.part2 .two{
+    border-right: 0.01rem solid rgb(245,245,245);
+}
+.part3{
+    height: 5.26rem;
+    width: 100%;
+
+    margin-bottom: 0.2rem;
+}
+.part3 .large{
+    height: 4.83rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0.13rem;
+}
+.part3 .title{
+    padding:0.16rem 0 0.14rem 0;
+    line-height: 1;
+    font-size:0.13rem ;
+    text-align: center;
+    width:100%;
+}
+.part3 .small_box{
+    width:1.38rem;
+    height: 1.48rem;
+}
+.part3 .small_box img{
+    width:1.38rem;
+    height: 0.92rem;
+    display: block;
+}
+.part3 .small_box .p1{
+    font-size: 0.12rem;
+    line-height: 0.17rem;
+    color: #1f2023;
+    margin-top: 0.05rem;
+    text-align: center;
+}
+.part3 .small_box .p2{
+    font-size: 0.08rem;
+    color: #adadaf;
+    line-height: 1;
+    margin-top: 0.06rem;
+}
+.part3 .small_box .p2 span{ 
+    font-size:0.12rem;
+    color: #ff8579;
+}
+.part4{
+    height:0.58rem;
+    width:100%;
+    background-color: #f5f5f5;
+    overflow: hidden;
+
+}
+.part4 p{
+    font-size: 0.08rem;
+    color: #9ea3ab; 
+    line-height: 1;
+    margin-top: 0.21rem;
+    text-align: center;
+}
+.part4 p sup{
+    font-size: 0.02rem;
+}
+.part4 ul{
+    width: 1.25rem;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.08rem;
+    color: #656565;
+    margin-top: 0.1rem;
+    margin-left: 0.96rem;
+}
+.footer{
+    width: 100%;
+    height:0.42rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .small_box{
+    height:0.42rem;
+    width:1.46rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.footer .small_box p:nth-of-type(1){
+    font-size: 0.17rem;
+    color: #6e6e6e;
+    line-height: 1;
+}
+.footer .small_box p:nth-of-type(2){
+    font-size: 0.1rem;
+    color: #6e6e6e;
+    line-height: 1;
+    margin-top: 0.07rem;
+}
+.footer .small_box:nth-child(1) .iconfont {
+    color:#00b081;
+}
+.footer .small_box:nth-child(1) .one {
+    color:#00b081;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        /* 1200 1000 800 300
+        pc优先
+            ：1200 1000 800 300
+        移动优先
+            ：300 800 1000 1200
+
+        媒体查询： 
+        @media 设备类型 and 媒体特性{
+            css代码
+            
+        }
+    
+        */
+       
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .one{
+            display: none;
+        }
+        /* 当设备类型是电脑， 手机，平板的时候才能生效 */
+        @media screen {
+            div{
+                background-color: green;
+            }
+        }
+       /* 当设备类型是打印机或者打印预览的时候才能生效 */
+        /* @media print {
+            .box{
+                background-color: green;
+            }
+        } */
+        /* 适配所有类型 */
+        /* @media all {
+            .box{
+                background-color: green;
+            }
+        } */
+
+
+        /* 媒体特性
+        + width  			定义输入设备中的页面可见区域宽度 
+        + min-width  	定义输入设备中的页面最小可见区域宽度     
+        + max-width	 定义输入设备中的页面最大可见区域宽度
+        + height		    定义输入设备中的页面可见区域高度
+        + min-height	定义输入设备中的页面最小可见区域高度
+        + max-height   定义输入设备中的页面最大可见区域高度
+        + orientation	定义输入设备中的页面可见区域高度是否大于或等于宽度
+            + landscape  横屏
+            + portrait  竖屏
+        
+        */
+
+        /* @media screen and (min-width:521px)  {
+            .box{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width:700px)  {
+            .box{
+                background-color: pink;
+            }
+            .one{
+                display: block;
+            }
+        } */
+
+        /* @media screen and (min-height:321px)  {
+            .box{
+                background-color: green;
+            }
+        } */
+
+        /* @media screen and (orientation:landscape)  {
+            .box{
+                background-color: green;
+            }
+        } */
+
+        /* 
+        and:并且，前后的条件都要成立
+        */
+        /* @media print and (orientation:landscape)  {
+            .box{
+                background-color: green;
+            }
+        } */
+        /* 
+        , : 或者,只要一个添加满足即可
+         */
+        /* @media print , (orientation:landscape)  {
+            .box{
+                background-color: green;
+            }
+        } */
+        /* 
+        only: 浏览器兼容,浏览器不支持媒体查询，就不在解析样式
+        */
+        /* @media only print , (orientation:landscape)  {
+            .box{
+                background-color: green;
+            }
+        } */
+
+
+</style>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="one">
+        隐藏
+    </div>
+    
+     
+</body>
+</html>

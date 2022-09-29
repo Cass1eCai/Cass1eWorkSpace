@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    body{
+        height:2000px;
+    }
+    .large{
+        position: fixed;
+        right:0px;
+        top:30%;
+    }
+    .box{
+        width:82px;
+        height:90px;
+        border:1px solid rgb(178, 175, 175);
+        text-align: center;
+        position: relative;
+    }
+    img{
+        width:40px;
+        height:50px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .box:hover{
+        color:orange;
+    }
+    .box:hover .msk{
+        display: block;
+    }
+    .msk{
+        width:200px;
+        height:200px;
+        border: 1px solid #eee;
+        position: absolute;
+        top:0px;
+        left:-230px;
+        display: none;
+    }
+    .one{
+        width:0px;
+        height:0px;
+        border:15px solid transparent;
+        border-left-color: #eee;
+        position: absolute;
+        left:200px;
+        top:50px;
+    }
+    .msk img{
+        width:140px;
+        height:140px;
+        margin-top: 10px;
+    }
+    .msk p{
+        font-size: 12px;
+    }
+</style>
+<body>
+    <div class="large">
+        <div class="box">
+            <img src="./img/手机.png" alt="">
+            <p>手机APP</p>
+            <div class="msk">
+                <img src="./img/u=3843550160,3244431256&fm=253&fmt=auto&app=120&f=JPEG.webp" alt="">
+                <p>扫一扫</p>
+                <p>加好友</p>
+                <div class="one">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/手机.png" alt="">
+            <p>手机APP</p>
+        </div>
+        <div class="box">
+            <img src="./img/手机.png" alt="">
+            <p>手机APP</p>
+        </div>
+        <div class="box">
+            <img src="./img/手机.png" alt="">
+            <p>手机APP</p>
+        </div>
+    </div>
+</body>
+</html>

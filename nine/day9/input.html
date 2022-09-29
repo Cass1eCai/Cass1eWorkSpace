@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        width:364px;
+    }
+    .txt{
+        text-align: right;
+    }
+    fieldset{
+        border:0px;
+        border-top: 1px solid;
+    }
+</style>
+<body>
+    <form action="">
+        <div class="txt">
+            *号所在项为必填项
+        </div>
+        <fieldset>
+            <legend>个人信息</legend>
+            姓名*<input type="text"><br/>
+            地址*<input type="text"><br/>
+            出生*<select name="one" id="">
+                <option value="1" selected>1</option>
+                <option value="2">11</option>
+                <option value="3">111</option>
+            </select>
+            <select name="two" id="">
+                <option value="1" selected>JAN</option>
+                <option value="2">JUN</option>
+                <option value="3">SPR</option>
+            </select>
+            <select name="three" id="">
+                <option value="1" selected>1979</option>
+                <option value="2">1980</option>
+                <option value="3">1981</option>
+            </select><br/>
+            性别*<select name="" id="">
+                <option value="1" selected>女</option>
+                <option value="2">男</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                其他信息
+            </legend>
+            <fieldset>
+                <legend>
+                    你喜欢这个表单吗？*
+                </legend>
+                <input type="radio" name="" id="">喜欢
+                <input type="radio" name="" id="">不喜欢
+            </fieldset>
+            <fieldset>
+                <legend>
+                    你喜欢什么运动？*
+                </legend>
+                <input type="checkbox" name="" id="">足球
+                <input type="checkbox" name="" id="">篮球
+                <input type="checkbox" name="" id="">网球
+            </fieldset>
+            <fieldset>
+                <legend>
+                    请写下你的建议
+                </legend>
+                <textarea name="" id="" cols="" rows=""></textarea><br>
+                <input type="button" value="提交个人信息">
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

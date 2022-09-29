@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+    }
+    .box::selection{
+        background-color: red;
+        color: pink;
+    }
+    /* 修饰input提示文本的颜色 */
+    input::-webkit-input-placeholder{
+        color: red;
+        /* font-size: 30px; */
+        
+    }
+    input{
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="box">
+        被选取的文本
+    </div>
+    <input type="text" placeholder="请输入账号。。。">
+</body>
+</html>

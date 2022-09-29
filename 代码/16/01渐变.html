@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        margin: 4px;
+    }
+    div:nth-child(1){
+        /* 设置线性渐变 */
+        /* 方位值，默认从上到下 to bottom*/
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(red,pink);
+    }
+    div:nth-child(2){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(red,pink,blue,orange,aqua);
+    }
+    div:nth-child(3){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(to bottom,blue,orange);
+    }
+    div:nth-child(4){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(to left,pink,orange);
+    }
+    div:nth-child(5){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(to top left,green,orange);
+    }
+    div:nth-child(6){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(to bottom left,green,purple);
+    }
+    div:nth-child(7){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        /* 省略to必须要写浏览器前缀 */
+        background-image: -webkit-linear-gradient(right,orange,purple);
+    }
+    div:nth-child(8){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        background-image: linear-gradient(to right,orange,purple);
+    }
+    div:nth-child(9){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        /* 默认度数 180deg */
+        background-image: linear-gradient(60deg,orange,purple);
+    }
+    div:nth-child(10){
+        /* 设置线性渐变 */
+        /* background-image: linear-gradient(方位值,color1,color2....); */
+        /* 默认度数 180deg 度数可以为负值 */
+        background-image: linear-gradient(-10deg,orange,purple);
+    }
+    div:nth-child(11){
+        /* 设置线性渐变 */
+        /* 渐变区域 */
+        background-image: linear-gradient(90deg,orange 20px,purple 70px);
+    }
+    div:nth-child(12){
+        /* 设置线性渐变 */
+        /* 渐变区域 */
+        background-image: linear-gradient(green 50%,purple 60%);
+    }
+    div:nth-child(13){
+        /* 设置线性渐变 */
+        /* 渐变区域 */
+        background-image: linear-gradient(green 50%,purple 50%);
+    }
+    div:nth-child(14){
+        /* 设置线性渐变 */
+        /* 渐变区域 */
+        /* 当结束的渐变位置小于开始的渐变位置，那么结束的渐变值等于开始的值 */
+        background-image: linear-gradient(red 100px,aqua 80px);
+    }
+    div:nth-child(15){
+        /* 设置线性渐变 */
+        /* 渐变区域 */
+        /* 当结束的渐变位置小于开始的渐变位置，那么结束的渐变值等于开始的值 */
+        background-image: linear-gradient(to left,#000 50%,#fff 50%);
+        border-radius: 50%;
+    }
+    div:nth-child(16){
+        /* 设置线性渐变 */
+        /* 重复性线性渐变区域 */
+        background-image: repeating-linear-gradient(green 20px,purple 70px);
+    }
+    div:nth-child(17){
+        /* 设置线性渐变 */
+        /* 重复性线性渐变区域 */
+        /* 同一个元素可以设置多个渐变色，但是第一个渐变色，永远显示在最上面 */
+        background-image: repeating-linear-gradient(rgba(4, 150, 4,.5) 20px,rgba(169, 4, 169,.5) 70px),repeating-linear-gradient(to left,pink 20px,aqua 70px);
+    }
+    div:nth-child(18){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(red,blue);
+    }
+    div:nth-child(19){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(red,blue,pink,orange,aqua);
+    }
+    div:nth-child(20){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(circle,red,blue,pink,orange,aqua);
+    }
+    div:nth-child(21){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(at left,red,blue,pink,orange,aqua);
+    }
+    div:nth-child(22){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(at left top,purple,pink,orange,aqua);
+    }
+    div:nth-child(23){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(at 30px 50px,purple,pink,orange,aqua);
+    }
+    div:nth-child(24){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(at 50%,purple,pink,orange,aqua);
+    }
+    div:nth-child(25){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: -webkit-radial-gradient(left,purple,pink,orange,aqua);
+    }
+    div:nth-child(26){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: -webkit-radial-gradient(purple 30px,aqua 50px);
+    }
+    div:nth-child(27){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: -webkit-radial-gradient(purple 10%,aqua 20%);
+    }
+    div:nth-child(28){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: repeating-radial-gradient(purple 20px,aqua 40px);
+    }
+    div:nth-child(29){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: radial-gradient(circle at left,purple,aqua ,pink);
+    }
+    div:nth-child(30){
+        /* 设置径向渐变 */
+        width: 300px;
+        background-image: -webkit-radial-gradient(left,circle,purple,aqua ,pink);
+    }
+</style>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+</body>
+</html>

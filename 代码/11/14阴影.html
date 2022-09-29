@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    文本阴影：
+        text-shadow
+    盒子阴影：
+        box-shadow
+    */
+    .box{
+        font-size: 30px;
+        /* 添加文本阴影 */
+        /*  text-shadow: 水平距离 垂直距离 模糊程度 阴影颜色;  */
+        text-shadow: 20px 20px 10px red;
+        /* 
+        添加多套阴影的时候，使用逗号隔开
+        水平和垂直举例可以使用负值
+
+         text-shadow: 20px 20px 10px red,-20px -20px 10px yellow;
+        */
+    }
+    .one{
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid; */
+        margin-top: 30px;
+        /* 设置盒子阴影 */
+        /* box-shadow: 水平 垂直 模糊程度 阴影大小 阴影颜色 inset; */
+
+        /* box-shadow: 20px 10px 10px 10px pink inset; */
+        
+        /* 添加多套阴影的时候，使用逗号隔开 */
+        /* box-shadow: 10px 20px 10px 0 red,-10px -20px 10px 0 yellow; */
+
+        /* 
+        内部阴影
+        inset:要么写在最后，要么写在第一个位置
+        */
+        box-shadow: 0 0 10px #b0b0b0;
+    }
+</style>
+<body>
+    <div class="box">
+        文本阴影
+    </div>
+
+    <div class="one"></div>
+    
+</body>
+</html>

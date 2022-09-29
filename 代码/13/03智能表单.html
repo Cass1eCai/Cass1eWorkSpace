@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input::-webkit-input-placeholder{
+        color: red;
+    }
+</style>
+<body>
+    <form action="">
+        <!-- 邮箱输入框 必须包含@，@前后要有内容-->
+        <label for="box1">邮箱：</label>
+        <input type="email" name="ogg" id="box1" placeholder="请输入邮箱" autofocus><br>
+
+        <!-- 地址检验框 必须包含http:  https: -->
+        <label for="box2">地址：</label>
+        <input type="url" name="oa1" id="box2" autofocus><br>
+
+
+        <!-- 数字检验框 -->
+        <label for="box3">数量*：</label>
+        <input type="number" name="ob" id="box3" max="50" min="10" step="5" required><br>
+
+
+        <!-- 进度条检验框 -->
+        <label for="box4">进度：</label>
+        <input type="range" name="od" id="box4" max="50" min="10" step="5"><br>
+
+
+        <!--搜索框检验框 -->
+        <label for="box5">搜索：</label>
+        <input type="search" name="text" id="box5" autocomplete="off"><br>
+
+        <!--颜色检验框 -->
+        <label for="box6">颜色：</label>
+        <input type="color" name="oq" id="box6" ><br>
+
+
+        <!--时间检验框 -->
+        <input type="date" name="y" ><br>
+        <input type="month" name="m" ><br>
+        <input type="week" name="w" ><br>
+        <input type="time" name="t" ><br>
+        <input type="datetime-local" name="d" ><br>
+
+        手机号：
+        <input type="text" name="phone" id="" pattern="^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[189]))\d{8}$">
+
+      
+
+
+
+        <input type="submit">
+
+    </form>
+    
+    
+</body>
+</html>

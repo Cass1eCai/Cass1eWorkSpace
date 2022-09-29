@@ -1,0 +1,121 @@
+{
+  "id": "3673312",
+  "name": "总",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1240",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "120194",
+      "name": "砖石",
+      "font_class": "zhuanshi",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "356438",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "554208",
+      "name": "砖石",
+      "font_class": "iconset0219",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "673799",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "765290",
+      "name": "我的",
+      "font_class": "shouye1",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "884009",
+      "name": "灯泡",
+      "font_class": "dengpao",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1718321",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1718323",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "2675010",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "5650934",
+      "name": "文档",
+      "font_class": "wendang",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "5667828",
+      "name": "fsux_图表_马赛克图",
+      "font_class": "fsux_tubiao_masaiketu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "8402945",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8692390",
+      "name": "画板",
+      "font_class": "huaban",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "8763648",
+      "name": "钢笔",
+      "font_class": "gangbi",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "17448865",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    }
+  ]
+}

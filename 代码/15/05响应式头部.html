@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height: 60px;
+        background-color: rgba(0, 0, 0,.5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header img{
+        height: 40px;
+    }
+    .nav{
+        /* width: 200px; */
+        height: 100%;
+        /* background-color: red; */
+        display: none;
+        list-style: none;
+    }
+    li{
+        height: 100%;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+    .big img{
+        width: 100%;
+    }
+    .small img{
+        width: 45%;
+    }
+    @media screen and (min-width:750px){
+        .nav{
+            display: flex;
+        }
+        .title{
+            display: none;
+        }
+        .center{
+            display: flex;
+        }
+    }
+
+</style>
+<body>
+    <div class="header">
+        <div class="title">
+            menu
+        </div>
+        <img src="./logo.png" alt="">
+        <ul class="nav">
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+        </ul>
+        <div class="right">
+            登录
+        </div>
+    </div>
+    <div class="center">
+        <div class="big">
+            <img src="./swiper1.jpeg" alt="">
+        </div>
+        <div class="small">
+            <img src="./1.png" alt="">
+            <img src="./1.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

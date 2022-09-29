@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 300px;
+        border: 1px solid;
+    }
+    .box:nth-child(1){
+        /* 长单词换行 */
+        word-wrap: break-word;
+        /* 
+        normal:默认值 
+        break-word:换行
+        保证单词的完整性
+        适用性：英文文章
+        */
+    }
+    .box:nth-child(2){
+        /* 长单词换行 */
+        word-break: break-all;
+        /* 
+        normal:默认值 
+        break-all:换行
+        不考虑单词完整性
+        适用性：书写url地址
+        */
+    }
+</style>
+<body>
+    <div class="box">
+        The transport of atraziwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwne in soil was investigated with soil columnThe transport of atrazine in soil was investigated with soil columnThe transport of atrazine in soil was investigated with soil columnThe transport of atrazine in soil was 
+    </div>
+    <div class="box">
+        https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fhome.jd.com%2F
+    </div>
+</body>
+</html>

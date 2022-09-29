@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    E:enabled:匹配可用状态下的控件
+    E:disabled:匹配不可用状态下的控件
+    E:checked:匹配单选或多选，被选中后的样式
+
+ -->
+ <style>
+    input:enabled{
+        border: 10px solid red;
+    }
+    input:disabled{
+        border: 10px solid yellow;
+        background-color: blue;
+    }
+    input:checked+span{
+        background-color: red;
+    }
+    
+ </style>
+<body>
+    账号
+    <input type="text">
+    密码
+    <input type="password" name="" id="" disabled>
+    性别：
+        <input type="radio" name="sex" id=""><span>男(我被勾选了)</span>
+        <input type="radio" name="sex" id=""><span>女</span>
+    
+</body>
+</html>

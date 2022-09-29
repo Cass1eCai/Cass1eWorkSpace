@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 400px;
+        height: 400px;
+        background-color: #000;
+        position: relative;
+    }
+    .box div{
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        left: calc(50% - 15px);
+        top: calc(50% - 75px);
+        color: #fff;
+        border-radius: 6px;
+        text-align: center;
+        transition: all 3s;
+        transform-origin: bottom;
+        box-shadow: 0 0 6px #fff;
+    }
+    .box div:nth-child(9){
+        background-color: aqua;
+    }
+    .box:hover div:nth-child(4){
+        transform: rotate(-20deg);
+        background-color: red;
+    }
+    .box:hover div:nth-child(3){
+        transform: rotate(-40deg);
+        background-color: pink;
+    }
+    .box:hover div:nth-child(2){
+        transform: rotate(-60deg);
+        background-color: orange;
+    }
+    .box:hover div:nth-child(1){
+        transform: rotate(-80deg);
+        background-color: purple;
+    }
+    .box:hover div:nth-child(5){
+        background-color: blue;
+    }
+
+
+    .box:hover div:nth-child(6){
+        transform: rotate(20deg);
+        background-color: red;
+    }
+    .box:hover div:nth-child(7){
+        transform: rotate(40deg);
+        background-color: pink;
+    }
+    .box:hover div:nth-child(8){
+        transform: rotate(60deg);
+        background-color: orange;
+    }
+    .box:hover div:nth-child(9){
+        transform: rotate(80deg);
+    }
+
+</style>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+
+    </div>
+</body>
+</html>
